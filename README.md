@@ -62,6 +62,7 @@ Follow Heroku's deployment guidelines to deploy your Streamlit app.
 Author
 
 Kelvin Carrington Tichana
+
 License
 
 MIT Licence
