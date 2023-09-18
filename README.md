@@ -44,7 +44,7 @@ pip install -r requirements.txt
 Usage
 
 2. Run the Streamlit app locally using the following command:
-streamlit run streamlit_app.py
+streamlit run clean.py
 This will start the app and open it in your default web browser.
 Upload an Excel file containing mentorship applications using the "Upload an Excel file" button.
 The app will process the data, separate applications into "Complete Applications" and "Incomplete Applications" based on the completion status, and display the filtered DataFrames.
