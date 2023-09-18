@@ -11,7 +11,7 @@ def main():
 
     if uploaded_file is not None:
         try:
-            df = pd.read_excel(uploaded_file)
+            df = pd.read_excel(uploaded_file, header=1)
 
             # Load the last processed row index from a file or database
             try:
