@@ -41,7 +41,7 @@ cd baobab-mentorship-cleaning-app
 Install the required Python packages:
 pip install -r requirements.txt
 
-Usage
+## Usage
 
 2. Run the Streamlit app locally using the following command:
 streamlit run clean.py
@@ -51,7 +51,7 @@ The app will process the data, separate applications into "Complete Applications
 You can download the cleaned data as separate Excel files by clicking the provided download links.
 The app also saves the last processed row index, so you can continue processing applications from where you left off.
 
-Deployment (Optional)
+## Deployment (Optional)
 
 You can deploy the app to a cloud platform like Heroku to make it accessible to others. Here are the general steps:
 
@@ -59,10 +59,10 @@ Create a Heroku account if you don't have one.
 Install the Heroku CLI.
 Follow Heroku's deployment guidelines to deploy your Streamlit app.
 
-Author
+## Author
 
 Kelvin Carrington Tichana
 
-License
+## License
 
 MIT Licence
