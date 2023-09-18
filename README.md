@@ -40,6 +40,7 @@ Navigate to the project directory:
 cd baobab-mentorship-cleaning-app
 Install the required Python packages:
 pip install -r requirements.txt
+
 Usage
 
 2. Run the Streamlit app locally using the following command:
@@ -57,9 +58,9 @@ You can deploy the app to a cloud platform like Heroku to make it accessible to 
 Create a Heroku account if you don't have one.
 Install the Heroku CLI.
 Follow Heroku's deployment guidelines to deploy your Streamlit app.
+
 Author
 
 Kelvin Carrington Tichana
 License
 MIT Licence
-This table of contents will help users quickly navigate to the relevant sections of your `README.md` for easy reference.
