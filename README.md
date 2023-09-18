@@ -49,6 +49,7 @@ Upload an Excel file containing mentorship applications using the "Upload an Exc
 The app will process the data, separate applications into "Complete Applications" and "Incomplete Applications" based on the completion status, and display the filtered DataFrames.
 You can download the cleaned data as separate Excel files by clicking the provided download links.
 The app also saves the last processed row index, so you can continue processing applications from where you left off.
+
 Deployment (Optional)
 
 You can deploy the app to a cloud platform like Heroku to make it accessible to others. Here are the general steps:
