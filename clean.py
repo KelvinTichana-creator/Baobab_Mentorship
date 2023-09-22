@@ -84,24 +84,26 @@ def get_download_link(file_path, file_name):
     href = f'<a href="data:file/{file_path};base64,{base64.b64encode(open(file_path, "rb").read()).decode()}" download="{file_name}">Download {file_name}</a>'
     return href
 
-def generate_and_display_statistics(df, new_rows_df):
+def generate_and_display_statistics(df, yes_df):
     # Extract and count 'Gender' statistics from after processed row
-    gender_counts = new_rows_df['Gender   (We match from a gender binary of male/female. Please answer this question to ensure that we match you appropriately with a mentor.)'].value_counts()
+    gender_counts = yes_df['Gender   (We match from a gender binary of male/female. Please answer this question to ensure that we match you appropriately with a mentor.)'].value_counts()
     st.write("Gender Statistics (After Processed Row):")
     st.write(gender_counts)
 
+
     # Extract and count 'User Language' statistics from after processed row
-    language_counts = new_rows_df['User Language'].value_counts()
+    # language_counts = yes_df['User Language'].value_counts()
+    language_counts = yes_df[yes_df['Have you completed the Baobab Mentorship course?'] == 'Yes']['User Language'].value_counts()
     st.write("Language Statistics (After Processed Row):")
     st.write(language_counts)
 
     # Extract and count 'Country of birth' statistics from after processed row
-    country_counts = new_rows_df['Country of birth'].value_counts()
+    country_counts = yes_df['Country of birth'].value_counts()
     st.write("Country Statistics (After Processed Row):")
     st.write(country_counts)
 
     # Extract all age ranges and count occurrences from after processed row
-    age_ranges = extract_age_ranges(new_rows_df['Age'])
+    age_ranges = extract_age_ranges(yes_df['Age'])
     age_range_counts = age_ranges.value_counts().reset_index()
     age_range_counts.columns = ['Age Range', 'Count']
     st.write("Age Range Statistics (After Processed Row):")
