@@ -53,7 +53,7 @@ def get_download_link(file_path, file_name):
 def generate_and_display_mastercard_statistics(yes_df):
     # Extract and count 'Mastercard Foundation Programs' statistics
     mastercard_counts = yes_df['Which of the following Mastercard Foundation programs, if any, did you participate in (select all that apply) - Selected Choice'].value_counts()
-    st.write("Mastercard Foundation Programs Statistics (After Processed Row):")
+    st.write("Mastercard Foundation Programs Statistics")
     st.write(mastercard_counts)
 
     # Create and display a bar chart for 'Mastercard Foundation Programs'
